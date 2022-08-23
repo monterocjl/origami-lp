@@ -30,6 +30,7 @@ export default function ProductCard({ product }) {
         </Box>
         <Image
           w='100%'
+          h={{base: '148px', md: '249px'}}
           borderRadius='10px'
           src={product.image}
           alt={product.title}

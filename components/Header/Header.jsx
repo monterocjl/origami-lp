@@ -13,8 +13,8 @@ export default function Header({contactRef, aboutUsRef}) {
       >
         <Image height='20px' src='/images/logo_header.png' alt='Logotipo Plantari' />
         <Box display={{ base: "none", md: "flex" }} gap={5} fontWeight='600'>
-          <Box onClick={goToContact}>Contacto</Box>
-          <Box onClick={goToAboutUs}>¿Quiénes somos?</Box>
+          <Box cursor='pointer' _hover={{color: 'brand.400'}} onClick={goToContact}>Contacto</Box>
+          <Box cursor='pointer' _hover={{color: 'brand.400'}} onClick={goToAboutUs}>¿Quiénes somos?</Box>
         </Box>
         <Box display='flex' alignItems='center' gap={3}>
           <Icon fontSize='2xl' color='brand.400' display={{ base: "none", md: "block" }} as={IoCart}
