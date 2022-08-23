@@ -17,8 +17,7 @@ export default function Header({contactRef, aboutUsRef}) {
           <Box cursor='pointer' _hover={{color: 'brand.400'}} onClick={goToAboutUs}>¿Quiénes somos?</Box>
         </Box>
         <Box display='flex' alignItems='center' gap={3}>
-          <Icon fontSize='2xl' color='brand.400' display={{ base: "none", md: "block" }} as={IoCart}
-          />
+          <Icon fontSize='2xl' color='brand.400' as={IoCart}/>
           <Menu>
             <MenuButton
               as={IconButton} color='brand.400' fontSize='2xl' p={1} icon={<HamburgerIcon />}
